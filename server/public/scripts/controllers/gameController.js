@@ -3,7 +3,9 @@ colorBlocks.controller('GameController', ['$scope', 'DataFactory', function ($sc
   console.log('game controller running');
 
   var self = this;
-  self.colors = DataFactory;
+
+  // refer to the predetermined color array for the game now located in the DataFactory
+  self.colors = DataFactory.colors;
 
   // start game
   init();
